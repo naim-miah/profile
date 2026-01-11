@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Naim Miah - DevOps Engineer | Cloud, CI/CD, Kubernetes, Terraform, Observability"
+    />
+    <meta name="theme-color" content="#0a1024" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Naim Miah | DevOps Engineer</title>
+  </head>
+
+  <body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid" aria-label="Primary navigation">
+        <div class="nav__brand">
+          <a href="#home" class="nav__logo">Naim</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item">
+              <a href="#architecture" class="nav__link">Workflow</a>
+            </li>
+            <li class="nav__item"><a href="#fun" class="nav__link">Fun</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Theme toggle (Day/Night) -->
+        <button id="theme-toggle" class="nav__theme" type="button" aria-label="Toggle theme">
+          <i class="bx bx-moon" id="theme-icon"></i>
+        </button>
+
+        <div class="nav__toggle" id="nav-toggle" aria-label="Open menu" role="button" tabindex="0">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME / HERO =====-->
+      <section class="home bd-grid section" id="home">
+        <div class="hero__left">
+          <p class="hero__eyebrow">
+            <span class="dot"></span> DevOps Engineer • Cloud • CI/CD • Kubernetes
+          </p>
+
+          <h1 class="home__title">
+            Hi, <br />
+            I'm <span class="home__title-color">Naim Miah</span> <br />
+            DevOps Engineer
+          </h1>
+
+          <p class="hero__value">
+            I build secure CI/CD pipelines and reliable cloud infrastructure—focused on automation,
+            observability, and scalable deployments.
+          </p>
+
+          <div class="hero__badges">
+            <span class="chip"><i class="bx bxl-aws"></i> AWS</span>
+            <span class="chip"><i class="bx bx-cube"></i> Kubernetes</span>
+            <span class="chip"><i class="bx bxl-docker"></i> Docker</span>
+            <span class="chip"><i class="bx bx-git-branch"></i> CI/CD</span>
+            <span class="chip"><i class="bx bx-layer"></i> Terraform</span>
+            <span class="chip"><i class="bx bx-line-chart"></i> Observability</span>
+          </div>
+
+          <div class="hero__cta">
+            <a href="#projects" class="button button--primary">
+              View Projects <i class="bx bx-right-arrow-alt"></i>
+            </a>
+            <a href="#contact" class="button button--ghost">
+              Contact <i class="bx bx-envelope"></i>
+            </a>
+            <a class="button button--soft" href="./assets/files/Naim_Miah_CV.pdf" download>
+              Download CV <i class="bx bx-download"></i>
+            </a>
+          </div>
+
+          <div class="home__social" aria-label="Social links">
+            <a
+              href="https://www.linkedin.com/in/naimdevops/"
+              target="_blank"
+              rel="noopener"
+              class="home__social-icon"
+              aria-label="LinkedIn"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <a
+              href="mailto:m.naim0502@gmail.com"
+              class="home__social-icon"
+              aria-label="Email"
+            >
+              <i class="bx bx-mail-send"></i>
+            </a>
+
+            <a
+              href="https://github.com/naim-miah"
+              target="_blank"
+              rel="noopener"
+              class="home__social-icon"
+              aria-label="GitHub"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+
+            <!-- WhatsApp (smart open: mobile app / desktop web) -->
+            <a
+              href="https://wa.me/8801613668607?text=Hi%20Naim%2C%20I%20visited%20your%20portfolio."
+              target="_blank"
+              rel="noopener"
+              class="home__social-icon"
+              aria-label="WhatsApp"
+              data-wa-phone="8801613668607"
+              data-wa-text="Hi Naim, I visited your portfolio."
+            >
+              <i class="bx bxl-whatsapp"></i>
+            </a>
+          </div>
+
+          <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span>Scroll</span>
+            <i class="bx bx-mouse"></i>
+            <i class="bx bx-chevron-down"></i>
+          </a>
+        </div>
+
+        <div class="hero__right">
+          <div class="hero__blobWrap">
+            <svg
+              class="home__blob"
+              viewBox="0 0 479 467"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient id="blobGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="var(--accent-1)" />
+                  <stop offset="100%" stop-color="var(--accent-2)" />
+                </linearGradient>
+
+                <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+                  <feGaussianBlur stdDeviation="12" result="blur" />
+                  <feColorMatrix
+                    in="blur"
+                    type="matrix"
+                    values="
+                      1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 0.65 0"
+                    result="glow"
+                  />
+                  <feMerge>
+                    <feMergeNode in="glow" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                  />
+                </mask>
+              </defs>
+
+              <g filter="url(#softGlow)" mask="url(#mask0)">
+                <path
+                  fill="url(#blobGrad)"
+                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                />
+                <image
+                  class="home__blob-img"
+                  href="assets/img/Naim_Profile.png"
+                  x="59"
+                  y="90"
+                  width="380"
+                  height="380"
+                  preserveAspectRatio="xMidYMid slice"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <div class="hero__stats card spotlight" data-spotlight>
+            <div class="stat">
+              <p class="stat__num">3 Months</p>
+              <p class="stat__label">Industrial Training</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">528+ hrs</p>
+              <p class="stat__label">Hands-on Practice</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">Cloud + CI/CD</p>
+              <p class="stat__label">AWS / Docker / Terraform</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid card spotlight" data-spotlight>
+          <div class="about__img">
+            <img src="assets/img/Naim.jpeg" alt="Naim Miah portrait" />
+          </div>
+
+          <div class="about__content">
+            <h3 class="about__subtitle">I'm Naim Miah</h3>
+            <p class="about__text">
+              DevOps Engineer focused on cloud infrastructure, automation, and delivery pipelines.
+              I enjoy improving performance, security, and observability across the stack.
+            </p>
+
+            <div class="about__highlights">
+              <h4 class="subhead">Highlights</h4>
+              <ul class="list">
+                <li><i class="bx bx-check-circle"></i> Built deployment workflows and practiced CI/CD automation</li>
+                <li><i class="bx bx-check-circle"></i> Worked with AWS fundamentals + cloud networking concepts</li>
+                <li><i class="bx bx-check-circle"></i> Hands-on with Docker, Kubernetes basics, Terraform & Linux</li>
+                <li><i class="bx bx-check-circle"></i> cPanel deployments and hosting workflows</li>
+              </ul>
+            </div>
+
+            <div class="toolbox">
+              <h4 class="subhead">Toolbox</h4>
+              <div class="toolbox__row">
+                <span class="tool"><i class="bx bxl-aws"></i> AWS</span>
+                <span class="tool"><i class="bx bxl-docker"></i> Docker</span>
+                <span class="tool"><i class="bx bx-cube"></i> Kubernetes</span>
+                <span class="tool"><i class="bx bx-layer"></i> Terraform</span>
+                <span class="tool"><i class="bx bxl-github"></i> GitHub</span>
+                <span class="tool"><i class="bx bx-terminal"></i> Linux</span>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <h4 class="subhead">Experience</h4>
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div>
+                  <p class="timeline__title">Industrial Training — Zensoft Lab</p>
+                  <p class="timeline__desc">Focused on DevOps fundamentals, tools, and practical labs.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__actions">
+              <a class="button button--primary" href="#projects">See Projects</a>
+              <a class="button button--ghost" href="mailto:m.naim0502@gmail.com">Email Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div class="card spotlight" data-spotlight>
+            <h3 class="skills__subtitle">Cloud</h3>
+            <div class="chips">
+              <span class="chip">AWS (EC2, VPC, IAM, S3)</span>
+              <span class="chip">EKS Basics</span>
+              <span class="chip">Cloud Networking</span>
+            </div>
+          </div>
+
+          <div class="card spotlight" data-spotlight>
+            <h3 class="skills__subtitle">DevOps</h3>
+            <div class="chips">
+              <span class="chip">CI/CD</span>
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Kubernetes</span>
+              <span class="chip">Linux</span>
+            </div>
+          </div>
+
+          <div class="card spotlight" data-spotlight>
+            <h3 class="skills__subtitle">Infrastructure as Code</h3>
+            <div class="chips">
+              <span class="chip">Terraform</span>
+              <span class="chip">Ansible Basics</span>
+              <span class="chip">Bash Scripting</span>
+            </div>
+          </div>
+
+          <div class="card spotlight" data-spotlight>
+            <h3 class="skills__subtitle">Observability</h3>
+            <div class="chips">
+              <span class="chip">Monitoring</span>
+              <span class="chip">Logs</span>
+              <span class="chip">Alerting</span>
+              <span class="chip">Dashboards</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== PROJECTS =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects__container bd-grid">
+          <article class="project card spotlight" data-spotlight>
+            <div class="project__thumb">
+              <img src="assets/img/projects/employee-management.png" alt="Employee management project thumbnail" />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Employee Management System</h3>
+              <p class="project__desc">Manage employees, roles, and admin workflows. Built as a web-based management system.</p>
+
+              <div class="project__tags">
+                <span class="chip">PHP</span><span class="chip">HTML</span><span class="chip">CSS</span>
+              </div>
+
+              <div class="project__actions">
+                <a class="button button--primary" target="_blank" rel="noopener"
+                  href="https://github.com/naim-miah/Employee-management-system">
+                  GitHub <i class="bx bxl-github"></i>
+                </a>
+
+                <button type="button" class="button button--soft galleryBtn"
+                  data-title="Employee Management System"
+                  data-gallery="assets/img/projects/employee-1.png,assets/img/projects/employee-2.png,assets/img/projects/employee-3.png">
+                  Gallery <i class="bx bx-images"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card spotlight" data-spotlight>
+            <div class="project__thumb">
+              <img src="assets/img/projects/shortest-path.png" alt="Shortest path project thumbnail" />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Shortest Path Finding</h3>
+              <p class="project__desc">Pathfinding / shortest-route logic project (Java-focused). Great for algorithm practice.</p>
+
+              <div class="project__tags">
+                <span class="chip">Java</span><span class="chip">Algorithms</span><span class="chip">Graph</span>
+              </div>
+
+              <div class="project__actions">
+                <a class="button button--primary" target="_blank" rel="noopener"
+                  href="https://github.com/naim-miah/shortest-path-finding-problem-with-java-">
+                  GitHub <i class="bx bxl-github"></i>
+                </a>
+
+                <button type="button" class="button button--soft galleryBtn"
+                  data-title="Shortest Path Finding"
+                  data-gallery="assets/img/projects/path-1.png,assets/img/projects/path-2.png">
+                  Gallery <i class="bx bx-images"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card spotlight" data-spotlight>
+            <div class="project__thumb">
+              <img src="assets/img/projects/lost-and-found.png" alt="Lost and found project thumbnail" />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Lost &amp; Found</h3>
+              <p class="project__desc">A “lost and found” concept project (currently includes a demo video in the repo).</p>
+
+              <div class="project__tags">
+                <span class="chip">App Concept</span><span class="chip">Demo</span>
+              </div>
+
+              <div class="project__actions">
+                <a class="button button--primary" target="_blank" rel="noopener"
+                  href="https://github.com/naim-miah/LostAndFound">
+                  GitHub <i class="bx bxl-github"></i>
+                </a>
+
+                <button type="button" class="button button--soft galleryBtn"
+                  data-title="Lost & Found"
+                  data-gallery="assets/img/projects/lost-1.png,assets/img/projects/lost-2.png">
+                  Gallery <i class="bx bx-images"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card spotlight" data-spotlight>
+            <div class="project__thumb">
+              <img src="assets/img/projects/medicine-recommendation.png" alt="Medicine recommendation project thumbnail" />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Medicine Recommendation System</h3>
+              <p class="project__desc">Medicine recommendation system project (repo currently empty/WIP—still listed for portfolio).</p>
+
+              <div class="project__tags">
+                <span class="chip">ML (planned)</span><span class="chip">Web App</span>
+              </div>
+
+              <div class="project__actions">
+                <a class="button button--primary" target="_blank" rel="noopener"
+                  href="https://github.com/naim-miah/Medicine-recomandation-system">
+                  GitHub <i class="bx bxl-github"></i>
+                </a>
+
+                <button type="button" class="button button--soft galleryBtn"
+                  data-title="Medicine Recommendation System"
+                  data-gallery="assets/img/projects/med-1.png,assets/img/projects/med-2.png">
+                  Gallery <i class="bx bx-images"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--===== WORKFLOW =====-->
+      <section class="architecture section" id="architecture">
+        <h2 class="section-title">DevOps Workflow</h2>
+
+        <div class="bd-grid">
+          <div class="card spotlight" data-spotlight>
+            <h3 class="subhead">My DevOps Workflow</h3>
+            <div class="workflow">
+              <div class="workflow__step"><i class="bx bx-code-alt"></i><span>Code</span></div>
+              <div class="workflow__arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="workflow__step"><i class="bx bx-git-branch"></i><span>CI</span></div>
+              <div class="workflow__arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="workflow__step"><i class="bx bx-package"></i><span>Build</span></div>
+              <div class="workflow__arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="workflow__step"><i class="bx bx-shield-quarter"></i><span>Scan</span></div>
+              <div class="workflow__arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="workflow__step"><i class="bx bx-cloud-upload"></i><span>Deploy</span></div>
+              <div class="workflow__arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="workflow__step"><i class="bx bx-line-chart"></i><span>Monitor</span></div>
+            </div>
+            <p class="muted">Focus: automation, reliability, and fast feedback loops.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== FUN =====-->
+      <section class="section fun" id="fun">
+        <h2 class="section-title">Fun</h2>
+
+        <div class="fun__container bd-grid card spotlight" data-spotlight>
+          <div class="fun__left">
+            <h3 class="fun__title">Snake Game</h3>
+            <p class="fun__text">
+              Take a quick break 😄 Use Arrow keys (or WASD). Press Space to Start/Pause.
+            </p>
+
+            <div class="fun__stats">
+              <span class="chip">Score: <b id="snakeScore">0</b></span>
+              <span class="chip">High Score: <b id="snakeHighScore">0</b></span>
+            </div>
+
+            <div class="fun__buttons">
+              <button class="button button--primary" id="snakeStartBtn">Start</button>
+              <button class="button button--ghost" id="snakeResetBtn">Reset</button>
+            </div>
+
+            <p class="muted">Tip: Don’t hit the wall or yourself.</p>
+          </div>
+
+          <div class="fun__right">
+            <canvas id="snakeCanvas" width="420" height="420" aria-label="Snake game canvas"></canvas>
+
+            <div class="snakePad" aria-label="Mobile controls">
+              <button class="padBtn" data-dir="up">↑</button>
+              <div class="padRow">
+                <button class="padBtn" data-dir="left">←</button>
+                <button class="padBtn" data-dir="down">↓</button>
+                <button class="padBtn" data-dir="right">→</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid card spotlight" data-spotlight>
+          <div class="contact__top">
+            <p class="muted">
+              Email:
+              <a href="mailto:m.naim0502@gmail.com">m.naim0502@gmail.com</a>
+              • Usually reply within 24 hours
+            </p>
+
+            <div class="contact__links">
+              <a class="link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/naimdevops/">
+                <i class="bx bxl-linkedin"></i> LinkedIn
+              </a>
+              <a class="link" target="_blank" rel="noopener" href="https://github.com/naim-miah">
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+              <a class="link" href="mailto:m.naim0502@gmail.com">
+                <i class="bx bx-mail-send"></i> Email
+              </a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/8801613668607?text=Hi%20Naim%2C%20I%20want%20to%20connect."
+                data-wa-phone="8801613668607"
+                data-wa-text="Hi Naim, I want to connect."
+              >
+                <i class="bx bxl-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- IMPORTANT: put your real Formspree endpoint here OR handle in JS -->
+          <form class="contact__form" id="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your name" class="contact__input" required />
+            <input type="email" name="email" placeholder="Your email" class="contact__input" required />
+
+            <!-- honeypot -->
+            <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" />
+
+            <textarea
+              name="message"
+              rows="8"
+              placeholder="Your message"
+              class="contact__input"
+              required
+            ></textarea>
+
+            <button type="submit" class="contact__button button button--primary">
+              <span class="btnText">Send</span>
+              <span class="btnLoader" aria-hidden="true"></span>
+            </button>
+
+            <p class="formStatus" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Naim Miah</p>
+
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/naimdevops/" target="_blank" rel="noopener" class="footer__icon" aria-label="LinkedIn">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/naim-miah" target="_blank" rel="noopener" class="footer__icon" aria-label="GitHub">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="mailto:m.naim0502@gmail.com" class="footer__icon" aria-label="Email">
+          <i class="bx bx-mail-send"></i>
+        </a>
+      </div>
+
+      <p class="footer__copy">&#169; <span id="year"></span> Naim Miah. All rights reserved</p>
+    </footer>
+
+    <button class="toTop" id="toTop" aria-label="Back to top">
+      <i class="bx bx-up-arrow-alt"></i>
+    </button>
+
+    <!-- ===== Gallery Modal (Popup) ===== -->
+    <div class="modal" id="galleryModal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__backdrop" data-close></div>
+
+      <div class="modal__content" role="document" aria-label="Project Gallery">
+        <div class="modal__header">
+          <h3 class="modal__title" id="galleryTitle">Gallery</h3>
+          <button class="modal__close" type="button" data-close aria-label="Close gallery">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+
+        <div class="modal__grid" id="galleryGrid"></div>
+      </div>
+    </div>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/snake.js"></script>
+
+    <!-- Minimal inline helpers (safe) -->
+    <script>
+      /* Footer auto year */
+      (function () {
+        var y = document.getElementById("year");
+        if (y) y.textContent = new Date().getFullYear();
+      })();
+
+      /* WhatsApp smart link (mobile app / desktop web) */
+      (function () {
+        var links = document.querySelectorAll("[data-wa-phone]");
+        if (!links.length) return;
+
+        function isMobile() {
+          return (
+            /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+            (window.matchMedia && window.matchMedia("(pointer: coarse)").matches)
+          );
+        }
+
+        links.forEach(function (a) {
+          a.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            var phone = (a.dataset.waPhone || "").trim();
+            var text = (a.dataset.waText || "").trim();
+            if (!phone) return;
+
+            var encText = encodeURIComponent(text);
+            var url = isMobile()
+              ? "https://wa.me/" + phone + "?text=" + encText
+              : "https://web.whatsapp.com/send?phone=" + phone + "&text=" + encText;
+
+            var w = window.open(url, "_blank", "noopener");
+            if (!w) window.location.href = url;
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
